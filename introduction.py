@@ -1,5 +1,5 @@
 ##### EASY #####
-""" 
+""" WARM UP
 Task:
 Given an integer, , perform the following conditional actions:
 If  is odd, print Weird
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         print("Not Weird")
 
 
-'''
+''' DAY 1
 Task:
 Given the meal price (base cost of a meal), 
 tip percent (the percentage of the meal price being added as tip), 
@@ -43,8 +43,8 @@ def solve(meal_cost, tip_percent, tax_percent):
     print(round(total))
 
 
-'''
-Task
+''' DAY 2
+Task:
 Complete the code in the editor below. The variables i, d, and s are already declared and initialized for you. You must:
 
 1. Declare  variables: one of type int, one of type double, and one of type String.
@@ -69,3 +69,31 @@ print(d + b)
 # Concatenate and print the String variables on a new line
 # The 's' variable above should be printed first.
 print(s + c)
+
+
+''' DAY 3
+Task:
+Given an integer, , perform the following conditional actions:
+
+If  is odd, print Weird
+If  is even and in the inclusive range of  to , print Not Weird
+If  is even and in the inclusive range of  to , print Weird
+If  is even and greater than , print Not Weird
+Complete the stub code provided in your editor to print whether or not  is weird.
+'''
+
+if __name__ == '__main__':
+    N = int(input().strip())
+
+    if N % 2:
+        print("Weird")
+    # If n is even and in the inclusive range of 2 to 5, print Not Weird
+    if (N % 2 == 0) and 2 <= N <= 5:
+        print("Not Weird")
+    # If n is even and in the inclusive range of 6 to 20, print Weird
+    if (N % 2 == 0) and 6 <= N <= 20:
+        print("Weird")
+    # If n is even and greater than 20, print Not Weird
+    if (N % 2 == 0) and N > 20:
+        print("Not Weird")
+        
