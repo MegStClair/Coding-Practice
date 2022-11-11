@@ -131,3 +131,16 @@ class Person:
             
     def yearPasses(self):
         self.initialAge += 1
+
+
+'''DAY 5
+Task:
+Given an integer, n, print its first 10 multiples. 
+Each multiple n x i (where 1 <= i <= 10) should be printed on a new line in the form: n x i = result.'''
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+for i in range(1, 11):
+    res = (n * i)
+    print(n, "x", i,"=", res)
