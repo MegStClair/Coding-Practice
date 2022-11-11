@@ -176,3 +176,26 @@ for x in range(t):
             odds += s[i]
             
     print(f'{evens} {odds}')
+
+
+''' DAY 7
+Task:
+Given an array, a, of n integers, print a's elements in reverse order as a single line of space-separated numbers.
+
+Example:
+a = [1, 2, 3, 4]
+Print 4 3 2 1. Each integer is separated by one space.
+
+Input Format:
+The first line contains an integer, n (the size of our array).
+The second line contains arr, n space-separated integers that describe array a's elements.'''
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+    
+for i in reversed(arr):
+    print(f'{i} ', end='')
+    
+    
