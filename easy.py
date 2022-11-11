@@ -144,3 +144,35 @@ if __name__ == '__main__':
 for i in range(1, 11):
     res = (n * i)
     print(n, "x", i,"=", res)
+
+
+''' DAY 6
+Task:
+Given a string, s, of length n that is indexed from 0 to n -1, print its even-indexed and odd-indexed characters as 2 space-separated strings on a single line (see the Sample below for more detail).
+
+Note: 0 is considered to be an even index.
+
+Example:
+s = adbecf
+Print abc def
+
+Input Format:
+The first line contains an integer, t (the number of test cases).
+Each line i of the t subsequent lines contain a string, s.'''
+
+t = int(input()) 
+
+for x in range(t):
+    s = input()
+    n = len(s)
+
+    evens = ''
+    odds = ''
+        
+    for i in range(n):
+        if i % 2 == 0:
+            evens += s[i]
+        else:
+            odds += s[i]
+            
+    print(f'{evens} {odds}')
