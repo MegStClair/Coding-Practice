@@ -30,7 +30,7 @@ def isPalindrome(words):
 
 def isPalindrome(word):
 
-    end = -1                # end is the last index
+    end = -1                # end is the last index; word[-1]
     flag = 0                
 
     for i in word:          # iterate thru letters in word
