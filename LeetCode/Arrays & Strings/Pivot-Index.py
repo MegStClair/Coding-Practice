@@ -11,16 +11,16 @@ Return the leftmost pivot index. If no such index exists, return -1.'''
 
 def pivotIndex(self, nums):
     
-    left = 0
-    right = sum(nums)
+    left = 0            # initiate left at 0
+    right = sum(nums)   # right side is the sum of nums
     
-    for i, num in enumerate(nums):
-        right -= num
-        if left == right:
-            return i
+    for i, num in enumerate(nums):  # enumerate thru nums
+        right -= num                # remove current num from right, leave in limbo since we dont want to include it
+        if left == right:           # check for equality
+            return i                # if equal, return that index (pivot index)
         else:
-            left += num
+            left += num             # if not equal, add num to left side
             
-    return -1
+    return -1                       # if both sides are never equal, return last index as pivot index (per instructions)
 
     # O(n)

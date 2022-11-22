@@ -6,14 +6,14 @@ Return the running sum of nums.'''
 #### BRUTE FORCE SOLUTION #### O(n^2)
 
 def runningSum(nums):
-    sums = []  # array to keep track of sums
+    sums = []                   # array to keep track of sums
 
     for i in range(len(nums)):  # iterate thru elements in nums
-        run_sum = 0  # keeps track of running sum
+        run_sum = 0             # keeps track of running sum
 
-        for j in range(i+1):  # iterate thru elements after i
+        for j in range(i+1):    # iterate thru elements after i
             run_sum += nums[j]  #sum of all elements up to nums[i]
-        sums.append(run_sum)  # add runing sums to sums array
+        sums.append(run_sum)    # add runing sums to sums array
 
     return sums
 
